@@ -47,7 +47,7 @@ model = PeftModel.from_pretrained(model, adapter_path)
 model.eval()
 
 
-prompt_text = '{system_prompt}\n\n### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response: {{\n    "reasoning":'
+prompt_text = '{system_prompt}\n\n### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response: '
 prompt_chat = (
     "[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n{instruction}\n{input} [/INST] "
 )
